@@ -1,0 +1,10 @@
+name: health-check-ai-mcp
+description: "MEOK AI Labs — health-check-ai-mcp"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/health-check-ai-mcp
+license: MIT
+categories: [DevOps, Monitoring]
+tags: [health-check, uptime-monitoring, service-monitoring, endpoint-health]
+runtime: python
+entrypoint: server.py
