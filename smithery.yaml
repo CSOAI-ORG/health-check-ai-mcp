@@ -1,10 +1,31 @@
 name: health-check-ai-mcp
-description: "MEOK AI Labs — health-check-ai-mcp"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/health-check-ai-mcp
-license: MIT
-categories: [DevOps, Monitoring]
-tags: [health-check, uptime-monitoring, service-monitoring, endpoint-health]
-runtime: python
-entrypoint: server.py
+description: "health-check-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)"
+version: 1.0.0
+tools:
+- name: check_url
+  description: Check if a URL is responding. Returns status code, latency, headers.
+  parameters:
+  - name: url
+    type: string
+    required: true
+  - name: timeout
+    type: integer
+    required: false
+- name: check_multiple
+  description: Check multiple URLs (comma-separated). Returns status for each.
+  parameters:
+  - name: urls
+    type: string
+    required: true
+- name: check_ssl
+  description: Check SSL certificate validity and expiration.
+  parameters:
+  - name: domain
+    type: string
+    required: true
+- name: monitor_uptime
+  description: Get uptime estimate based on response pattern.
+  parameters:
+  - name: url
+    type: string
+    required: true

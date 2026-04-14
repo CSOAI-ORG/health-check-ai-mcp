@@ -1,20 +1,70 @@
 {
   "name": "health-check-ai-mcp",
-  "description": "MEOK AI Labs \u2014 health-check-ai-mcp",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/health-check-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "health-check-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)",
+  "version": "1.0.0",
   "tools": [
-    "run"
-  ],
-  "categories": [
-    "DevOps",
-    "Monitoring"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "check_url",
+      "description": "Check if a URL is responding. Returns status code, latency, headers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "timeout": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    {
+      "name": "check_multiple",
+      "description": "Check multiple URLs (comma-separated). Returns status for each.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "urls": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "urls"
+        ]
+      }
+    },
+    {
+      "name": "check_ssl",
+      "description": "Check SSL certificate validity and expiration.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "domain"
+        ]
+      }
+    },
+    {
+      "name": "monitor_uptime",
+      "description": "Get uptime estimate based on response pattern.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    }
+  ]
 }
