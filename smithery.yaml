@@ -1,5 +1,6 @@
 name: health-check-ai-mcp
-description: "MEOK AI Labs \u2014 HTTP endpoint health monitoring and status checking."
+description: 'Health Check Ai tools for AI agents. Capabilities: check url, check
+  multiple, check ssl. Built by MEOK AI Labs.'
 version: 1.0.0
 tools:
 - name: check_url

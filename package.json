@@ -1,1 +1,11 @@
-{"name":"health-check-ai-mcp","version":"1.0.0","description":"MEOK AI Labs MCP","author":"MEOK AI Labs","license":"MIT","repository":{"type":"git","url":"https://github.com/CSOAI-ORG/health-check-ai-mcp"}}
+{
+  "name": "health-check-ai-mcp",
+  "version": "1.0.0",
+  "description": "Health Check Ai tools for AI agents. Capabilities: check url, check multiple, check ssl. Built by MEOK AI Labs.",
+  "author": "MEOK AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/health-check-ai-mcp"
+  }
+}
