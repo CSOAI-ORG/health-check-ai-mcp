@@ -1,5 +1,5 @@
 name: health-check-ai-mcp
-description: "health-check-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)"
+description: "MEOK AI Labs \u2014 HTTP endpoint health monitoring and status checking."
 version: 1.0.0
 tools:
 - name: check_url
