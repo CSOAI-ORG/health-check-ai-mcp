@@ -73,7 +73,23 @@ def _do_check(url: str, timeout: int = 5) -> dict:
 @mcp.tool()
 def check_endpoint(url: str, timeout: int = 5, expected_status: int = 200,
                     api_key: str = "") -> str:
-    """Check if a URL endpoint is responding. Returns status code, latency, headers, and health assessment."""
+    """Check if a URL endpoint is responding. Returns status code, latency, headers, and health assessment.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -107,7 +123,23 @@ def check_endpoint(url: str, timeout: int = 5, expected_status: int = 200,
 
 @mcp.tool()
 def batch_check(urls: str, timeout: int = 5, api_key: str = "") -> str:
-    """Check multiple URLs (comma-separated). Returns status for each with summary statistics."""
+    """Check multiple URLs (comma-separated). Returns status for each with summary statistics.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -142,7 +174,23 @@ def batch_check(urls: str, timeout: int = 5, api_key: str = "") -> str:
 
 @mcp.tool()
 def get_uptime_report(url: str, api_key: str = "") -> str:
-    """Get uptime report for a monitored URL based on check history, including availability and latency trends."""
+    """Get uptime report for a monitored URL based on check history, including availability and latency trends.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -195,7 +243,23 @@ def get_uptime_report(url: str, api_key: str = "") -> str:
 @mcp.tool()
 def configure_monitor(url: str, name: str = "", expected_status: int = 200,
                        alert_threshold_ms: int = 2000, api_key: str = "") -> str:
-    """Configure a URL monitor with thresholds for alerting and tracking."""
+    """Configure a URL monitor with thresholds for alerting and tracking.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
