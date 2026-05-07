@@ -89,6 +89,13 @@ def check_endpoint(url: str, timeout: int = 5, expected_status: int = 200,
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        url (str): The url to analyze or process.
+        timeout (int): The timeout to analyze or process.
+        expected_status (int): The expected status to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -153,6 +160,12 @@ def batch_check(urls: str, timeout: int = 5, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        urls (str): The urls to analyze or process.
+        timeout (int): The timeout to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -218,6 +231,11 @@ def get_uptime_report(url: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        url (str): The url to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -301,6 +319,14 @@ def configure_monitor(url: str, name: str = "", expected_status: int = 200,
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        url (str): The url to analyze or process.
+        name (str): The name to analyze or process.
+        expected_status (int): The expected status to analyze or process.
+        alert_threshold_ms (int): The alert threshold ms to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
