@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""HTTP endpoint health monitoring and status checking. — MEOK AI Labs."""
+"""
+Buy Pro: https://www.csoai.org/checkout
+HTTP endpoint health monitoring and status checking. — MEOK AI Labs."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json, ssl, socket, time, hashlib
@@ -113,7 +114,7 @@ def check_endpoint(url: str, timeout: int = 5, expected_status: int = 200,
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     result = _do_check(url, timeout)
@@ -183,7 +184,7 @@ def batch_check(urls: str, timeout: int = 5, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     url_list = [u.strip() for u in urls.split(",") if u.strip()]
@@ -253,7 +254,7 @@ def get_uptime_report(url: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     history = _check_history.get(url, [])
@@ -344,7 +345,7 @@ def configure_monitor(url: str, name: str = "", expected_status: int = 200,
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     monitor_id = hashlib.md5(url.encode()).hexdigest()[:12]
@@ -374,5 +375,8 @@ def configure_monitor(url: str, name: str = "", expected_status: int = 200,
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
