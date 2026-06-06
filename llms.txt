@@ -1,0 +1,31 @@
+# Health Check Ai MCP
+
+> MEOK AI Labs — HTTP endpoint health monitoring and status checking
+
+`health-check-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install health-check-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx health-check-ai-mcp
+```
+
+## Tools
+
+- `check_endpoint` — Check if a URL endpoint is responding. Returns status code, latency, headers, and health assessment.
+- `batch_check` — Check multiple URLs (comma-separated). Returns status for each with summary statistics.
+- `get_uptime_report` — Get uptime report for a monitored URL based on check history, including availability and latency trends.
+- `configure_monitor` — Configure a URL monitor with thresholds for alerting and tracking.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/health-check-ai-mcp
+- PyPI: https://pypi.org/project/health-check-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
