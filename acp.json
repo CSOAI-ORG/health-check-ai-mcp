@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "health-check-ai-mcp",
+    "description": "Health Check Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "health-check-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "check_endpoint",
+      "batch_check",
+      "get_uptime_report",
+      "configure_monitor"
+    ]
+  }
+}

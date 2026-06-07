@@ -1,0 +1,59 @@
+{
+  "name": "health-check-ai-mcp",
+  "description": "Health Check Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/health-check-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "check_endpoint",
+      "name": "Check Endpoint",
+      "description": "check_endpoint via health-check-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "batch_check",
+      "name": "Batch Check",
+      "description": "batch_check via health-check-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_uptime_report",
+      "name": "Get Uptime Report",
+      "description": "get_uptime_report via health-check-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "configure_monitor",
+      "name": "Configure Monitor",
+      "description": "configure_monitor via health-check-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
