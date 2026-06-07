@@ -1,0 +1,9 @@
+# health-check-ai-mcp - Auto-trigger Rules
+
+When the user asks about health check, use health-check-ai-mcp tools: check_endpoint, batch_check, get_uptime_report, configure_monitor
+
+**MCP server for health check ai mcp operations**
+
+Install: `pip install health-check-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

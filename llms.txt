@@ -1,31 +1,33 @@
-# Health Check Ai MCP
-
-> MEOK AI Labs — HTTP endpoint health monitoring and status checking
-
-`health-check-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# health-check-ai-mcp
+# **MCP server for health check ai mcp operations**
 
 ## Install
-
 ```bash
 pip install health-check-ai-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx health-check-ai-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `check_endpoint` — Check if a URL endpoint is responding. Returns status code, latency, headers, and health assessment.
-- `batch_check` — Check multiple URLs (comma-separated). Returns status for each with summary statistics.
-- `get_uptime_report` — Get uptime report for a monitored URL based on check history, including availability and latency trends.
-- `configure_monitor` — Configure a URL monitor with thresholds for alerting and tracking.
+### `check_endpoint`
+Check if a URL endpoint is responding. Returns status code, latency, headers, and health assessment.
 
-## Links
+### `batch_check`
+Check multiple URLs (comma-separated). Returns status for each with summary statistics.
 
-- Source: https://github.com/CSOAI-ORG/health-check-ai-mcp
-- PyPI: https://pypi.org/project/health-check-ai-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `get_uptime_report`
+Get uptime report for a monitored URL based on check history, including availability and latency trends.
+
+### `configure_monitor`
+Configure a URL monitor with thresholds for alerting and tracking.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """
-Buy Pro: https://www.csoai.org/checkout
 HTTP endpoint health monitoring and status checking. — MEOK AI Labs."""
 
 import sys, os
