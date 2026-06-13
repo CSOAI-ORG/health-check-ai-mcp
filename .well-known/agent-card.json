@@ -1,0 +1,96 @@
+{
+  "name": "Health Check Ai Mcp",
+  "version": "1.0.6",
+  "url": "https://mcp.meok.ai/health-check-ai-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "Health Check Ai tools for AI agents. Capabilities: check url, check multiple, check ssl. Built by MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "check_endpoint",
+      "name": "Check Endpoint",
+      "description": "Check Endpoint — a tool of the health-check-ai-mcp MCP.",
+      "tags": [
+        "health"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "batch_check",
+      "name": "Batch Check",
+      "description": "Batch Check — a tool of the health-check-ai-mcp MCP.",
+      "tags": [
+        "health"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "get_uptime_report",
+      "name": "Get Uptime Report",
+      "description": "Get Uptime Report — a tool of the health-check-ai-mcp MCP.",
+      "tags": [
+        "health"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "configure_monitor",
+      "name": "Configure Monitor",
+      "description": "Configure Monitor — a tool of the health-check-ai-mcp MCP.",
+      "tags": [
+        "health"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "health-check-ai-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
